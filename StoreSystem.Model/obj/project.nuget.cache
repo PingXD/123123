@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FLc5RBTSAliP60dUw7m+yiCZJvk7d/lKENk7IEWNiyBIL/g0eXR28YJXKoK8K+oz77AqKzBn5TU8B2lvEmiEIQ==",
+  "dgSpecHash": "j2TOW64ZxytSQQ5pg7EYk+5nUwME91ztCSYhNlIDWmTSWc+iiSg4Wg85u31Ms94GVDxu9p+YBlmPlHlpdtK48w==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\StoreSystem\\StoreSystem.MVC.csproj",
+  "projectFilePath": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512"

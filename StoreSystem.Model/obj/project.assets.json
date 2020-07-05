@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\StoreSystem\\StoreSystem.MVC.csproj",
-      "projectName": "StoreSystem.MVC",
-      "projectPath": "D:\\Documents\\StoreSystem\\StoreSystem.MVC.csproj",
+      "projectUniqueName": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
+      "projectName": "StoreSystem.Model",
+      "projectPath": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\StoreSystem\\obj\\",
+      "outputPath": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,9 +64,6 @@
           }
         ],
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
