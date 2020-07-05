@@ -1,0 +1,8 @@
+D:\Documents\StoreSystem\StoreSystem.DAL\bin\Debug\netcoreapp3.1\StoreSystem.DAL.deps.json
+D:\Documents\StoreSystem\StoreSystem.DAL\bin\Debug\netcoreapp3.1\StoreSystem.DAL.dll
+D:\Documents\StoreSystem\StoreSystem.DAL\bin\Debug\netcoreapp3.1\StoreSystem.DAL.pdb
+D:\Documents\StoreSystem\StoreSystem.DAL\obj\Debug\netcoreapp3.1\StoreSystem.DAL.AssemblyInfoInputs.cache
+D:\Documents\StoreSystem\StoreSystem.DAL\obj\Debug\netcoreapp3.1\StoreSystem.DAL.AssemblyInfo.cs
+D:\Documents\StoreSystem\StoreSystem.DAL\obj\Debug\netcoreapp3.1\StoreSystem.DAL.csproj.CoreCompileInputs.cache
+D:\Documents\StoreSystem\StoreSystem.DAL\obj\Debug\netcoreapp3.1\StoreSystem.DAL.dll
+D:\Documents\StoreSystem\StoreSystem.DAL\obj\Debug\netcoreapp3.1\StoreSystem.DAL.pdb

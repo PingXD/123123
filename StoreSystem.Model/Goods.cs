@@ -6,8 +6,10 @@ namespace StoreSystem.Model
 {
    public class Goods:BaseModelGuid
     {
+        public string GoodsImage { get; set; }
         public string  GoodsName { get; set; }
         public double Price { get; set; }
-        public TYPE Type { get; set; }
+        public GoodsClass GoodsClass { get; set; }
+
     }
 }

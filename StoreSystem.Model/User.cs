@@ -9,7 +9,6 @@ namespace StoreSystem.Model
   {
       public string UsernName { get; set; }
       public string PassWord { get; set; }
-      public string NickName
-      { get; set; }
+      public string NickName { get; set; }
   }
 }

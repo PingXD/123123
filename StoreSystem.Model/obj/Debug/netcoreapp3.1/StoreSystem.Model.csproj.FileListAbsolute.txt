@@ -1,0 +1,4 @@
+D:\Documents\StoreSystem\StoreSystem.Model\obj\Debug\netcoreapp3.1\StoreSystem.Model.csprojAssemblyReference.cache
+D:\Documents\StoreSystem\StoreSystem.Model\obj\Debug\netcoreapp3.1\StoreSystem.Model.AssemblyInfoInputs.cache
+D:\Documents\StoreSystem\StoreSystem.Model\obj\Debug\netcoreapp3.1\StoreSystem.Model.AssemblyInfo.cs
+D:\Documents\StoreSystem\StoreSystem.Model\obj\Debug\netcoreapp3.1\StoreSystem.Model.csproj.CoreCompileInputs.cache
