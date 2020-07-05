@@ -7,7 +7,7 @@ namespace StoreSystem.Model
 {
   public  class User:BaseModelGuid
   {
-      public string UsernName { get; set; }
+      public string UserName { get; set; }
       public string PassWord { get; set; }
       public string NickName { get; set; }
   }
