@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Text;
 
 namespace StoreSystem.Model
 {
-   public class BaseGoodsClass
+   public class GoodsClassMaster
     {
-        public string ClassMaster { get; set; } 
+        public TYPE Type { get; set; }
     }
 }
