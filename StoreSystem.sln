@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.MVC", "StoreSys
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.Model", "StoreSystem.Model\StoreSystem.Model.csproj", "{9C3804CE-6932-437F-8F47-6F19B68BB6E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.IDAL", "StoreSystem.IDAL\StoreSystem.IDAL.csproj", "{736E80F2-0BE4-4C80-9D71-2A5472EF889C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.IDAL", "StoreSystem.IDAL\StoreSystem.IDAL.csproj", "{736E80F2-0BE4-4C80-9D71-2A5472EF889C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.DAL", "StoreSystem.DAL\StoreSystem.DAL.csproj", "{43F1E918-97EE-4E09-90D9-84D12822AAEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{736E80F2-0BE4-4C80-9D71-2A5472EF889C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{736E80F2-0BE4-4C80-9D71-2A5472EF889C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{736E80F2-0BE4-4C80-9D71-2A5472EF889C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F1E918-97EE-4E09-90D9-84D12822AAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F1E918-97EE-4E09-90D9-84D12822AAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F1E918-97EE-4E09-90D9-84D12822AAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F1E918-97EE-4E09-90D9-84D12822AAEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
