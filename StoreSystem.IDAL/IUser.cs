@@ -8,7 +8,7 @@ namespace StoreSystem.IDAL
 {
     public interface IUser<T> where T:User
     {
-        Task<bool> UserAuth(T user);
-        Task<bool> ChangeUserPwd(T user);
+        Task UserAuth(T user);
+        Task ChangeUserPwd(T user);
     }
 }

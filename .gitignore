@@ -1,8 +1,8 @@
-.vs/
-StoreSystem.IDAL/obj/
-StoreSystem.MVC/obj/
-StoreSystem.Model/obj/
-StoreSystem.DAL/obj/
+.vs/*
+StoreSystem.IDAL/obj/*
+StoreSystem.MVC/obj/*
+StoreSystem.Model/obj/*
+StoreSystem.DAL/obj/*
 ###################
 # compiled source #
 ###################
