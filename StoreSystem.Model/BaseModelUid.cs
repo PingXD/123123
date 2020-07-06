@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace StoreSystem.Model
@@ -9,6 +11,7 @@ namespace StoreSystem.Model
         /// <summary>
         /// Uid的方式创建主键
         /// </summary>
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity),Key]
         public int Uid { get; set; }
         /// <summary>
         /// 创建当前时间

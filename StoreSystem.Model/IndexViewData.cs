@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StoreSystem.Model
 {
-   public class IndexViewData
+   public class IndexViewData:BaseModelUid
     {
         /// <summary>
         /// 主页图片

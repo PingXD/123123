@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj": {}
+    "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj": {
+    "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
         "projectName": "StoreSystem.Model",
-        "projectPath": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
+        "projectPath": "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\obj\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,28 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql.Design": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

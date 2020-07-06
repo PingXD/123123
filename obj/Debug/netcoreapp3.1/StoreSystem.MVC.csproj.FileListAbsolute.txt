@@ -1,7 +1,0 @@
-D:\Documents\StoreSystem\obj\Debug\netcoreapp3.1\StoreSystem.MVC.csprojAssemblyReference.cache
-D:\Documents\StoreSystem\obj\Debug\netcoreapp3.1\StoreSystem.MVC.AssemblyInfoInputs.cache
-D:\Documents\StoreSystem\obj\Debug\netcoreapp3.1\StoreSystem.MVC.AssemblyInfo.cs
-D:\Documents\StoreSystem\obj\Debug\netcoreapp3.1\StoreSystem.MVC.csproj.CoreCompileInputs.cache
-D:\Documents\StoreSystem\obj\Debug\netcoreapp3.1\StoreSystem.MVC.MvcApplicationPartsAssemblyInfo.cache
-D:\Documents\StoreSystem\obj\Debug\netcoreapp3.1\StoreSystem.MVC.RazorAssemblyInfo.cache
-D:\Documents\StoreSystem\obj\Debug\netcoreapp3.1\StoreSystem.MVC.RazorAssemblyInfo.cs
