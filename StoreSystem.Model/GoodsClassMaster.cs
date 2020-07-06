@@ -4,8 +4,11 @@ using System.Text;
 
 namespace StoreSystem.Model
 {
-   public class GoodsClassMaster
+   public class GoodsClassMaster:BaseModelUid
     {
-        public TYPE Type { get; set; }
+        /// <summary>
+        /// 商品一级分类的名称
+        /// </summary>
+        public string ClassMater { get; set; }
     }
 }

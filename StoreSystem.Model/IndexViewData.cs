@@ -6,9 +6,14 @@ namespace StoreSystem.Model
 {
    public class IndexViewData
     {
-        public string ImgePath { get; set; }
-        
-        public string ImageDirectionalURL { get; set; }
+        /// <summary>
+        /// 主页图片
+        /// </summary>
+        public string ImagePath { get; set; }
+        /// <summary>
+        /// 主页图片指向的Url
+        /// </summary>
+        public string ImageDirectionalUrl { get; set; }
 
     }
 }

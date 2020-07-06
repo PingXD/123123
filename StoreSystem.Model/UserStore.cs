@@ -6,10 +6,15 @@ namespace StoreSystem.Model
 {
    public class UserStore
     {
-        public string Location { get; set; }
-        public int[] Stores { get; set; }
-
-        public User User { get; set; }
+        //userid是外键，没有主键
+        /// <summary>
+        /// 购物车中的商品id数组
+        /// </summary>
+        public int[] Goods{get; set; }
+        /// <summary>
+        /// 关联的用户id
+        /// </summary>
+        public int UserId { get; set; }
 
 
     }
