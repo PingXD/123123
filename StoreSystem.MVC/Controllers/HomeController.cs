@@ -20,6 +20,10 @@ namespace StoreSystem.MVC.Controllers
 
         public IActionResult Index()
         {
+            IBLL.IGoodsClass  tClass= new BLL.GoodsClass();
+            var f= tClass.GetAllClassList();
+            string s;
+            
             return View();
         }
 

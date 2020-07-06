@@ -8,7 +8,7 @@ using StoreSystem.Model;
 
 namespace StoreSystem.IDAL
 {
-    public  interface IBaseService<T> where  T:BaseModelUid,new()
+    public  interface IBaseService<T>:IDisposable where  T:BaseModelUid,new()
     {
         Task InsertAsync(T model);
 

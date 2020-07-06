@@ -9,12 +9,17 @@ using StoreSystem.Model;
 
 namespace StoreSystem.DAL
 {
-    public class GoodsClass<T>: IGoodsClass<T> where T: GoodsClass
+    public class GoodsClass : BaseService<Model.GoodsClass>, IGoodsClass
     {
-        private readonly DbContext _db;
-        public Task<T> GetGoodsClass()
+        public GoodsClass():base(new StoreContext())
         {
-            return (Task<T>)_db.Set<T>().Where(m => !m.IsDelete).AsNoTracking();
+
         }
+
+        public IQueryable<Model.GoodsClass> GetGoodsClass()
+        {
+            return GetAllAsync();
+        }
+
     }
 }

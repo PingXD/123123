@@ -9,13 +9,15 @@ using StoreSystem.Model;
 
 namespace StoreSystem.DAL
 {
+    
     public class BaseService<T> : IBaseService<T> where T : BaseModelUid,new()
     {
+
         private readonly StoreContext _db;
 
         public BaseService(StoreContext db)
         {
-            _db = db;
+            this._db = db;
         }
 
         public async Task DeleteAsync(int id)
@@ -36,10 +38,14 @@ namespace StoreSystem.DAL
             await DeleteAsync(model.Uid);
         }
 
+
+
         public IQueryable<T> GetAllAsync()
         {
-            return _db.Set<T>().Where(m => !m.IsDelete).AsNoTracking();
+            
+            return _db.Set<T>().AsNoTracking();
         }
+        
 
         public IQueryable<T> GetOneByIdAsync(int id)
         {
@@ -62,6 +68,10 @@ namespace StoreSystem.DAL
         {
             _db.Entry(model).State = EntityState.Modified;
             await _db.SaveChangesAsync();
+        }
+        public void Dispose()
+        {
+           _db.Dispose();
         }
     }
 }

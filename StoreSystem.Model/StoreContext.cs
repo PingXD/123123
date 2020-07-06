@@ -2,15 +2,25 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 
 namespace StoreSystem.Model
 {
 
+
     public class StoreContext : DbContext
     {
+        private IConfiguration Configuration { get; }
+        public StoreContext(IConfiguration configuration):base(configuration.ToString())
+        {
+            this.Configuration = configuration;
+        }
+
         public StoreContext(DbContextOptions<StoreContext> options) : base(options)
         {
         }
+
+
 
         public DbSet<Goods> Goodses { get; set; }
         public DbSet<GoodsClass> GoodsClasses { get; set; }
@@ -23,6 +33,11 @@ namespace StoreSystem.Model
         {
 
 
+        }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
         }
     }
    
