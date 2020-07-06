@@ -31,6 +31,11 @@ namespace StoreSystem.DAL
 
         }
 
+        public async Task DeleteAsync(T model)
+        {
+            await DeleteAsync(model.Uid);
+        }
+
         public IQueryable<T> GetAllAsync()
         {
             return _db.Set<T>().Where(m => !m.IsDelete).AsNoTracking();
