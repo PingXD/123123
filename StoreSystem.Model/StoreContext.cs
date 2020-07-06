@@ -21,7 +21,7 @@ namespace StoreSystem.Model
         public DbSet<UserStore>  UserStores { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-           
+
 
         }
     }

@@ -5363,11 +5363,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
+      "projectUniqueName": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
       "projectName": "StoreSystem.Model",
-      "projectPath": "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
+      "projectPath": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\StoreSystem.Model.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.Model\\obj\\",
+      "outputPath": "D:\\Documents\\StoreSystem\\StoreSystem.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

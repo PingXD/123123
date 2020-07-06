@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace StoreSystem.Model
@@ -7,7 +8,7 @@ namespace StoreSystem.Model
    public class Goods:BaseModelUid
     {
         //外键是goodsclass的主键
-
+        
         /// <summary>
         /// 商品主图路径
         /// </summary>
@@ -23,6 +24,7 @@ namespace StoreSystem.Model
         /// <summary>
         /// 商品分类的ID，是外键
         /// </summary>
+         [ForeignKey("GoodsClass")]
         public int GoodsClassId { get; set; }
 
     }

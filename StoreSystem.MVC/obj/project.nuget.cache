@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IWV2lQPODz96GLM0wH82KAkBPakAKF3GCuoDFgUZ3N5CfbGiExRjd2eSLnRm0gw7TmfzaHccpYCKiw/G60CBKw==",
+  "dgSpecHash": "p3tmcPyp/hkIkOIbnwRzbgt03Xt42v/Aq/ZaLGotPXGVASUyMu8S8vjbm7nF4zgWn2SV59Kqad4K83QwioemmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\StoreSystem\\StoreSystem.MVC\\StoreSystem.MVC.csproj",
+  "projectFilePath": "D:\\Documents\\StoreSystem\\StoreSystem.MVC\\StoreSystem.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore\\3.0.0\\microsoft.entityframeworkcore.3.0.0.nupkg.sha512",

@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.MVC", "StoreSystem.MVC\StoreSystem.MVC.csproj", "{6E17C49B-C97D-4A13-9FAE-5863A574779D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.Model", "StoreSystem.Model\StoreSystem.Model.csproj", "{9C3804CE-6932-437F-8F47-6F19B68BB6E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.Model", "StoreSystem.Model\StoreSystem.Model.csproj", "{9C3804CE-6932-437F-8F47-6F19B68BB6E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.IDAL", "StoreSystem.IDAL\StoreSystem.IDAL.csproj", "{736E80F2-0BE4-4C80-9D71-2A5472EF889C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9C3804CE-6932-437F-8F47-6F19B68BB6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C3804CE-6932-437F-8F47-6F19B68BB6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C3804CE-6932-437F-8F47-6F19B68BB6E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736E80F2-0BE4-4C80-9D71-2A5472EF889C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736E80F2-0BE4-4C80-9D71-2A5472EF889C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736E80F2-0BE4-4C80-9D71-2A5472EF889C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736E80F2-0BE4-4C80-9D71-2A5472EF889C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
