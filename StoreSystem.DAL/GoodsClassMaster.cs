@@ -11,10 +11,6 @@ namespace StoreSystem.DAL
     public class GoodsClassMaster: BaseService<Model.GoodsClassMaster>,IGoodsClassMaster
     {
 
-        public GoodsClassMaster() : base(new StoreContext())
-        {
-
-        }
 
         public IQueryable<Model.GoodsClassMaster> GetAllGoodsClassMaster()
         {

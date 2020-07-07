@@ -13,6 +13,7 @@ namespace StoreSystem.DAL
     {
 
 
+
         public IQueryable<Model.GoodsClass> GetGoodsClass()
         {
             return GetAllAsync();

@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.MVC", "StoreSystem.MVC\StoreSystem.MVC.csproj", "{6E17C49B-C97D-4A13-9FAE-5863A574779D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{43F1E918-97EE-4E09-90D9-84D12822AAEA} = {43F1E918-97EE-4E09-90D9-84D12822AAEA}
+		{736E80F2-0BE4-4C80-9D71-2A5472EF889C} = {736E80F2-0BE4-4C80-9D71-2A5472EF889C}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.Model", "StoreSystem.Model\StoreSystem.Model.csproj", "{9C3804CE-6932-437F-8F47-6F19B68BB6E6}"
 EndProject
@@ -11,11 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.IDAL", "StoreSy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.DAL", "StoreSystem.DAL\StoreSystem.DAL.csproj", "{43F1E918-97EE-4E09-90D9-84D12822AAEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.IBLL", "StoreSystem.IBLL\StoreSystem.IBLL.csproj", "{565E0C19-DA9E-4819-93B6-E6663E5DEE4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.IBLL", "StoreSystem.IBLL\StoreSystem.IBLL.csproj", "{565E0C19-DA9E-4819-93B6-E6663E5DEE4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.Dto", "StoreSystem.Dto\StoreSystem.Dto.csproj", "{A6E6805F-3090-4E6F-A0E8-30CE739FFAEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.Dto", "StoreSystem.Dto\StoreSystem.Dto.csproj", "{A6E6805F-3090-4E6F-A0E8-30CE739FFAEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.BLL", "StoreSystem.BLL\StoreSystem.BLL.csproj", "{289CD25A-10BF-4EA0-BAFF-1B8B773E9003}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.BLL", "StoreSystem.BLL\StoreSystem.BLL.csproj", "{289CD25A-10BF-4EA0-BAFF-1B8B773E9003}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -10,16 +10,19 @@ namespace StoreSystem.Model
 
     public class StoreContext : DbContext
     {
-        private IConfiguration Configuration;
-        public StoreContext(IConfiguration configuration):base()
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            this.Configuration = configuration;
+            optionsBuilder.UseMySql("Server=localhost;User Id=root;Database=storesystem_db");
         }
 
-        public StoreContext(DbContextOptions<StoreContext> options) : base(options)
-        {
-        }
 
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+
+        }
 
 
         public DbSet<Goods> Goodses { get; set; }
@@ -29,17 +32,8 @@ namespace StoreSystem.Model
         public DbSet<Location> Locations  { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserStore>  UserStores { get; set; }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
 
 
-        }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseMySql(Configuration.GetConnectionString("DefaultConnection"));
-        }
-    }
-   
 
-}
+}}

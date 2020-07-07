@@ -6,16 +6,20 @@ using StoreSystem.Dto;
 using StoreSystem.IBLL;
 using StoreSystem.Model;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using Microsoft.EntityFrameworkCore;
+
 namespace StoreSystem.BLL
 {
     public class GoodsClass : IGoodsClass
     {
-        public Task<List<DtoClass>> GetAllClassList()
+        public async Task<List<DtoClass>> GetAllClassList()
         {
             using (IDAL.IGoodsClass ic = new DAL.GoodsClass())
             {
                 using (IDAL.IGoodsClassMaster icm = new DAL.GoodsClassMaster())
                 {
+
                     var s = ic.GetGoodsClass();
                     var b = icm.GetAllGoodsClassMaster();
                     var t = from goodsClass in s
@@ -23,20 +27,30 @@ namespace StoreSystem.BLL
                             select new
                             {
                                     goodsClassMaster.ClassMater,
-                                    goodsClass.GoodsClassBelong,
+                                    goodsClass.GoodsClassBelong
                             };
-                    return (Task<List<DtoClass>>)t;
-
+                  return  await (from st in t
+                            select new DtoClass
+                            {
+                                    ClassBelong = st.GoodsClassBelong,
+                                    ClassMaster = st.ClassMater
+                            }).ToListAsync();
                 }
-
             }
 
-          
-            
-          
-            
-                    
-            throw new NotImplementedException();
         }
-    }
+        //public class MyClass
+        //{
+        //    public IQueryable<GoodsClassMaster> Te() {
+        //     IDAL.IBaseService<GoodsClassMaster> ss=new DAL.BaseService<GoodsClassMaster>();
+        //     return ss.GetOneByIdAsync(1);
+                
+        //    }
+        //}
+
+
+
+}
+
+    
 }

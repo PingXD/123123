@@ -9,17 +9,14 @@ using StoreSystem.Model;
 
 namespace StoreSystem.DAL
 {
-    
+
+
     public class BaseService<T> : IBaseService<T> where T : BaseModelUid,new()
     {
-        private StoreContext _db = new StoreContext();
+        private StoreContext _db = new StoreContext( );
 
-        public BaseService(StoreContext db)
-        {
-            this._db = db;
-        }
 
-        public async Task DeleteAsync(int id)
+    public async Task DeleteAsync(int id)
         {
             
             var t = new T()

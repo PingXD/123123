@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using StoreSystem.MVC.Models;
+using static StoreSystem.BLL.GoodsClass;
 
 namespace StoreSystem.MVC.Controllers
 {
@@ -21,9 +22,15 @@ namespace StoreSystem.MVC.Controllers
         public IActionResult Index()
         {
             IBLL.IGoodsClass  tClass= new BLL.GoodsClass();
-            var f= tClass.GetAllClassList();
-            string s;
+           var f =  tClass.GetAllClassList().Result.FirstOrDefault();
             
+            //MyClass sss = new MyClass();
+            string sd = f.ClassMaster;
+            //foreach (var asd in f )
+            //{
+            //    sd = asd.ClassMaster;
+            //}
+
             return View();
         }
 
