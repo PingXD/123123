@@ -11,10 +11,7 @@ namespace StoreSystem.DAL
 {
     public class GoodsClass : BaseService<Model.GoodsClass>, IGoodsClass
     {
-        public GoodsClass():base(new StoreContext())
-        {
 
-        }
 
         public IQueryable<Model.GoodsClass> GetGoodsClass()
         {

@@ -10,8 +10,8 @@ namespace StoreSystem.Model
 
     public class StoreContext : DbContext
     {
-        private IConfiguration Configuration { get; }
-        public StoreContext(IConfiguration configuration):base(configuration.ToString())
+        private IConfiguration Configuration;
+        public StoreContext(IConfiguration configuration):base()
         {
             this.Configuration = configuration;
         }

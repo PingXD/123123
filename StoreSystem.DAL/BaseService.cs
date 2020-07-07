@@ -12,8 +12,7 @@ namespace StoreSystem.DAL
     
     public class BaseService<T> : IBaseService<T> where T : BaseModelUid,new()
     {
-
-        private readonly StoreContext _db;
+        private StoreContext _db = new StoreContext();
 
         public BaseService(StoreContext db)
         {
