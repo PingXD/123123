@@ -5,12 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using StoreSystem.BLL;
-using StoreSystem.Dto;
-using StoreSystem.MVC.Models;
-using static StoreSystem.BLL.GoodsClass;
+using StoreSystem.API.Models;
 
-namespace StoreSystem.MVC.Controllers
+namespace StoreSystem.API.Controllers
 {
     public class HomeController : Controller
     {
@@ -23,7 +20,6 @@ namespace StoreSystem.MVC.Controllers
 
         public IActionResult Index()
         {
-
             return View();
         }
 

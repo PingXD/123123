@@ -42,10 +42,10 @@ namespace StoreSystem.DAL
 
 
 
-        public IQueryable<T> GetAllAsync()
+        public  IQueryable<T> GetAllAsync()
         {
             
-            return _db.Set<T>().AsNoTracking();
+            return  _db.Set<T>().AsNoTracking();
         }
         
 

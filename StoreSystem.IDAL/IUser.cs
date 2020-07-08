@@ -6,8 +6,9 @@ using StoreSystem.Model;
 
 namespace StoreSystem.IDAL
 {
-    public interface IUser<T> where T:User
+    public interface IUser<T>:IDisposable where T:User
     {
+        Task Registered(T user,bool bl=true);
         Task UserAuth(T user);
         Task ChangeUserPwd(T user);
     }

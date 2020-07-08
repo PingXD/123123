@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace StoreSystem.IBLL
 {
-   public interface IGoodsClass
+   public interface IGoodsClass:IDisposable
    {
        Task<List<DtoClass>> GetAllClassList();
+
+       
+
    }
 }

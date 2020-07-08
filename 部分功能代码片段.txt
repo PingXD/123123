@@ -1,0 +1,16 @@
+获取全部分类代码片段
+IBLL.IGoodsClass  tClass= new BLL.GoodsClass();
+var f = tClass.GetAllClassList().Result;
+
+用户注册代码片段
+Dto.DtoUser du = new DtoUser()
+{
+	UserName = "unm",
+	PassWord = "pwd",
+	NickName = "nnm",
+	PhoneNum = "110"
+};
+using (IBLL.IUser iu = new User())
+{
+	iu.Registered(du);
+}

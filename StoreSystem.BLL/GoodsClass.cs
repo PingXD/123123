@@ -10,54 +10,35 @@ namespace StoreSystem.BLL
 {
     public class GoodsClass : IGoodsClass
     {
-        
+
+
         public async Task<List<DtoClass>> GetAllClassList()
         {
-            StoreContext dbContext = new StoreContext();
-            IDAL.IGoodsClassMaster icm = new DAL.GoodsClassMaster(dbContext);
-            var b = icm.GetAllGoodsClassMaster();
-
-
-
-            IDAL.IGoodsClass ic = new DAL.GoodsClass(dbContext);
-            
-            var s = ic.GetGoodsClass();
-           
-
-
-
-                var t = from goodsClass in s
-                        from goodsClassMaster in b
-                        where goodsClassMaster.Uid == goodsClass.ClassMasterId
-                        select new
-                        {
-                                goodsClassMaster.ClassMater,
-                                goodsClass.GoodsClassBelong
-                        };
-               var t1 =  b.First();
-                //var t2= s.First();
-                return await (from st in t
-                        select new DtoClass
-                        {
-                                ClassBelong = st.GoodsClassBelong,
-                                ClassMaster = st.ClassMater
-                        }).ToListAsync();
-
-            
-
-
-
+            using StoreContext dbContext = new StoreContext();
+            using (IDAL.IGoodsClassMaster icm = new DAL.GoodsClassMaster(dbContext))
+            {
+                var b = icm.GetAllGoodsClassMaster();
+                using (IDAL.IGoodsClass ic = new DAL.GoodsClass(dbContext))
+                {
+                    var s = ic.GetGoodsClass();
+                    return await (from goodsClass in s
+                                  from goodsClassMaster in b
+                                  where goodsClassMaster.Uid == goodsClass.ClassMasterId
+                                  select new DtoClass
+                                  {
+                                      ClassMaster = goodsClassMaster.ClassMater,
+                                      ClassBelong = goodsClass.GoodsClassBelong
+                                  }).ToListAsync();
+                }
+            }
         }
-        //public class MyClass
-        //{
-        //    public IQueryable<GoodsClassMaster> Te() {
-        //     IDAL.IBaseService<GoodsClassMaster> ss=new DAL.BaseService<GoodsClassMaster>();
-        //     return ss.GetOneByIdAsync(1);
-                
-        //    }
-        //}
 
+        public void Dispose()
+        {
+            
+        }
 
+       
 
 }
 
