@@ -11,7 +11,7 @@ namespace StoreSystem.DAL
 {
     public class GoodsClass : BaseService<Model.GoodsClass>, IGoodsClass
     {
-        public GoodsClass(StoreContext db) : base(db)
+        public GoodsClass() : base(new StoreContext())
         {
         }
 

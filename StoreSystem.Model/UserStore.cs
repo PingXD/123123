@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace StoreSystem.Model
@@ -14,6 +16,7 @@ namespace StoreSystem.Model
         /// <summary>
         /// 关联的用户id
         /// </summary>
+        [Required,ForeignKey("User")]
         public int UserId { get; set; }
 
 

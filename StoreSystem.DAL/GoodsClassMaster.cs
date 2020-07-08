@@ -10,7 +10,7 @@ namespace StoreSystem.DAL
 {
     public class GoodsClassMaster : BaseService<Model.GoodsClassMaster>, IGoodsClassMaster
     {
-        public GoodsClassMaster(StoreContext db):base(db)
+        public GoodsClassMaster():base(new StoreContext())
         {
         }
 

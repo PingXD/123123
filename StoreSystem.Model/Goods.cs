@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
@@ -12,10 +13,12 @@ namespace StoreSystem.Model
         /// <summary>
         /// 商品主图路径
         /// </summary>
+        
         public string GoodsImage { get; set; }
         /// <summary>
         /// 商品名称
         /// </summary>
+        [Required, StringLength(32)]
         public string  GoodsName { get; set; }
         /// <summary>
         /// 商品价格
@@ -24,7 +27,7 @@ namespace StoreSystem.Model
         /// <summary>
         /// 商品分类的ID，是外键
         /// </summary>
-         [ForeignKey("GoodsClass")]
+        [Required,ForeignKey("GoodsClass")]
         public int GoodsClassId { get; set; }
 
     }

@@ -12,21 +12,23 @@ namespace StoreSystem.Model
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("Server=localhost;User Id=root;Database=storesystem_db");
+           optionsBuilder.UseMySql("Server=localhost;User Id=root;Database=storesystem_db");
+           base.OnConfiguring(optionsBuilder);
         }
 
-        public StoreContext() 
+    
+
+        public StoreContext(DbContextOptions<StoreContext> options): base(options)
         {
+            
         }
-
-        public StoreContext(DbContextOptions<StoreContext> options) : base(options)
+        public StoreContext() : base()
         {
-        }
+            
 
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-
         }
 
 

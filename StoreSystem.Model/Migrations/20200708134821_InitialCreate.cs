@@ -16,7 +16,7 @@ namespace StoreSystem.Model.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     DateTime = table.Column<DateTime>(nullable: false),
                     IsDelete = table.Column<bool>(nullable: false),
-                    GoodsClassBelong = table.Column<string>(nullable: true),
+                    GoodsClassBelong = table.Column<string>(maxLength: 10, nullable: false),
                     ClassMasterId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -48,7 +48,7 @@ namespace StoreSystem.Model.Migrations
                     DateTime = table.Column<DateTime>(nullable: false),
                     IsDelete = table.Column<bool>(nullable: false),
                     GoodsImage = table.Column<string>(nullable: true),
-                    GoodsName = table.Column<string>(nullable: true),
+                    GoodsName = table.Column<string>(maxLength: 32, nullable: false),
                     Price = table.Column<double>(nullable: false),
                     GoodsClassId = table.Column<int>(nullable: false)
                 },
@@ -97,10 +97,10 @@ namespace StoreSystem.Model.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     DateTime = table.Column<DateTime>(nullable: false),
                     IsDelete = table.Column<bool>(nullable: false),
-                    UserName = table.Column<string>(nullable: true),
-                    PassWord = table.Column<string>(nullable: true),
-                    NickName = table.Column<string>(nullable: true),
-                    PhoneNum = table.Column<string>(nullable: true)
+                    UserName = table.Column<string>(maxLength: 16, nullable: false),
+                    PassWord = table.Column<string>(maxLength: 32, nullable: false),
+                    Email = table.Column<string>(nullable: true),
+                    PhoneNum = table.Column<string>(maxLength: 11, nullable: false)
                 },
                 constraints: table =>
                 {

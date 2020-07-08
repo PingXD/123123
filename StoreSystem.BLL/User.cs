@@ -13,16 +13,17 @@ namespace StoreSystem.BLL
 
         public async Task Registered(Dto.DtoUser du)
         {
-            Model.User mUser= new Model.User()
+            using (IDAL.IUser<Model.User> iu = new DAL.User())
+            {
+                Model.User mUser= new Model.User()
             {
                 UserName = du.UserName,
                 PassWord = du.PassWord,
-                NickName = du.NickName,
+                Email = du.Email,
                 PhoneNum = du.PhoneNum
             };
-            using StoreContext dbContext = new StoreContext();
-            using (IDAL.IUser<Model.User> iu = new DAL.User(dbContext))
-            {
+            
+
                 await iu.Registered(mUser);
             }
         }

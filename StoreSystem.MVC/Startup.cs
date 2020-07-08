@@ -25,8 +25,8 @@ namespace StoreSystem.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContextPool<StoreContext>(options =>
-                    options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<StoreContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+
 
         }
 

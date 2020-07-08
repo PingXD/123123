@@ -9,8 +9,8 @@ using StoreSystem.Model;
 namespace StoreSystem.Model.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20200706060036_two")]
-    partial class two
+    [Migration("20200708134821_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,7 +35,9 @@ namespace StoreSystem.Model.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("GoodsName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(32) CHARACTER SET utf8mb4")
+                        .HasMaxLength(32);
 
                     b.Property<bool>("IsDelete")
                         .HasColumnType("tinyint(1)");
@@ -61,7 +63,9 @@ namespace StoreSystem.Model.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("GoodsClassBelong")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(10) CHARACTER SET utf8mb4")
+                        .HasMaxLength(10);
 
                     b.Property<bool>("IsDelete")
                         .HasColumnType("tinyint(1)");
@@ -146,20 +150,26 @@ namespace StoreSystem.Model.Migrations
                     b.Property<DateTime>("DateTime")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("Email")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<bool>("IsDelete")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("NickName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
                     b.Property<string>("PassWord")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(32) CHARACTER SET utf8mb4")
+                        .HasMaxLength(32);
 
                     b.Property<string>("PhoneNum")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(11) CHARACTER SET utf8mb4")
+                        .HasMaxLength(11);
 
                     b.Property<string>("UserName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+                        .IsRequired()
+                        .HasColumnType("varchar(16) CHARACTER SET utf8mb4")
+                        .HasMaxLength(16);
 
                     b.HasKey("Uid");
 

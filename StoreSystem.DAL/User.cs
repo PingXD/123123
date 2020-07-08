@@ -11,7 +11,7 @@ namespace StoreSystem.DAL
     {
         
 
-        public User(StoreContext db):base(db)
+        public User():base(new StoreContext())
         {
             
         }
@@ -29,7 +29,7 @@ namespace StoreSystem.DAL
           return InsertAsync(user);
         }
 
-        public  void Dispose()
+        public new void Dispose()
         {
 
         }

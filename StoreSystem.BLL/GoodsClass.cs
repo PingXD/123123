@@ -14,11 +14,11 @@ namespace StoreSystem.BLL
 
         public async Task<List<DtoClass>> GetAllClassList()
         {
-            using StoreContext dbContext = new StoreContext();
-            using (IDAL.IGoodsClassMaster icm = new DAL.GoodsClassMaster(dbContext))
+            
+            using (IDAL.IGoodsClassMaster icm = new DAL.GoodsClassMaster())
             {
                 var b = icm.GetAllGoodsClassMaster();
-                using (IDAL.IGoodsClass ic = new DAL.GoodsClass(dbContext))
+                using (IDAL.IGoodsClass ic = new DAL.GoodsClass())
                 {
                     var s = ic.GetGoodsClass();
                     return await (from goodsClass in s
@@ -35,7 +35,7 @@ namespace StoreSystem.BLL
 
         public void Dispose()
         {
-            
+            throw new System.NotImplementedException();
         }
 
        
