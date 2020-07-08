@@ -21,12 +21,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.Dto", "StoreSys
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.BLL", "StoreSystem.BLL\StoreSystem.BLL.csproj", "{289CD25A-10BF-4EA0-BAFF-1B8B773E9003}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.API", "StoreSystem.API\StoreSystem.API.csproj", "{C1FC0366-A62E-4988-8F06-C50EC260FB62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreSystem.API", "StoreSystem.API\StoreSystem.API.csproj", "{C1FC0366-A62E-4988-8F06-C50EC260FB62}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "代码示例", "代码示例", "{2FC54AC2-DAE5-4AAA-B505-0C7C6E530A37}"
 	ProjectSection(SolutionItems) = preProject
 		部分功能代码片段.txt = 部分功能代码片段.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreSystem.ClassTools", "StoreSyetel.ClassTools\StoreSystem.ClassTools.csproj", "{CDB62CC8-E053-472F-BA1A-9E0204A4243A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -134,6 +136,18 @@ Global
 		{C1FC0366-A62E-4988-8F06-C50EC260FB62}.Release|x64.Build.0 = Release|Any CPU
 		{C1FC0366-A62E-4988-8F06-C50EC260FB62}.Release|x86.ActiveCfg = Release|Any CPU
 		{C1FC0366-A62E-4988-8F06-C50EC260FB62}.Release|x86.Build.0 = Release|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Debug|x64.Build.0 = Debug|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Debug|x86.Build.0 = Debug|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Release|x64.ActiveCfg = Release|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Release|x64.Build.0 = Release|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Release|x86.ActiveCfg = Release|Any CPU
+		{CDB62CC8-E053-472F-BA1A-9E0204A4243A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

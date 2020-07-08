@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StoreSyetel.ClassTools\StoreSystem.ClassTools.csproj" />
     <ProjectReference Include="..\StoreSystem.BLL\StoreSystem.BLL.csproj" />
     <ProjectReference Include="..\StoreSystem.Dto\StoreSystem.Dto.csproj" />
     <ProjectReference Include="..\StoreSystem.IBLL\StoreSystem.IBLL.csproj" />
