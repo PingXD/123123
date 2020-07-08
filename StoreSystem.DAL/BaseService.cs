@@ -13,10 +13,16 @@ namespace StoreSystem.DAL
 
     public class BaseService<T> : IBaseService<T> where T : BaseModelUid,new()
     {
-        private StoreContext _db = new StoreContext( );
+        private readonly StoreContext _db;
+
+        public BaseService(StoreContext db)
+        {
+            _db = db;
+        }
 
 
-    public async Task DeleteAsync(int id)
+
+        public async Task DeleteAsync(int id)
         {
             
             var t = new T()

@@ -8,9 +8,11 @@ using StoreSystem.Model;
 using Microsoft.EntityFrameworkCore;
 namespace StoreSystem.DAL
 {
-    public class GoodsClassMaster: BaseService<Model.GoodsClassMaster>,IGoodsClassMaster
+    public class GoodsClassMaster : BaseService<Model.GoodsClassMaster>, IGoodsClassMaster
     {
-
+        public GoodsClassMaster(StoreContext db):base(db)
+        {
+        }
 
         public IQueryable<Model.GoodsClassMaster> GetAllGoodsClassMaster()
         {

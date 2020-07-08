@@ -25,8 +25,8 @@ namespace StoreSystem.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //services.AddDbContextPool<StoreContext>(options =>
-            //        options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContextPool<StoreContext>(options =>  
+                    options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
