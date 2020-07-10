@@ -50,10 +50,10 @@ namespace StoreSystem.DAL
         }
         
 
-        public IQueryable<T> GetOneByIdAsync(int id)
+        public async Task<T> GetOneByIdAsync(int id)
         {
-           return _db.Set<T>().Where(m => m.Uid == id).AsNoTracking();
-
+           return await _db.Set<T>().Where(m => m.Uid == id).FirstOrDefaultAsync();
+            
         }
 
         public async Task InsertAsync(T model)

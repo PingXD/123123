@@ -1,0 +1,78 @@
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    top: 18px;
+    right: -85px;
+    border-left: 1px solid #c81523;
+    padding-left: 13px;
+}
+
+.sk_list {
+    float: left;
+    font-size: 16px;
+    line-height: 46px;
+}
+
+.sk_list a {
+    padding: 0 25px;
+    color: #000;
+    font-weight: 800;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+    line-height: 49px;
+    font-size: 14px;
+    padding: 0 24px;
+    color: #666666;
+}
+
+.sk_more::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+}
+
+.sk_hd {
+    height: 120px;
+}
+
+.sk_bd ul li {
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+    margin-right: 13px;
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_bd ul li p {
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #b1191a;
+}
+
+.ruch {
+    position: absolute;
+    bottom: 0;
+    width: 288px;
+    height: 50px;
+    background-color: #b1191a;
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}

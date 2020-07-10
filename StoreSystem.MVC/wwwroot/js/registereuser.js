@@ -1,30 +1,31 @@
-﻿$("#registered").click(function () {
+﻿function Post() {
     var unm = $("#username").val();
     var pwd = $("#password").val();
-    var nickname = $("#nickname").val();
-    var phonenum = $("#phonenum").val();
+    var email = $("#Email").val();
+    var phonenum = $("#PhoneNum").val();
+    console.log(unm);
     $.ajax(
         {
-            url: "/api/user/registereduser",
-            type: "post",
+            url: "/api/ApiRegistered",
+            type:"POST" ,
             data:
             {
                 'UserName': unm,
                 'PassWord': pwd,
-                'NickName': nickname,
-                'PhoneNum':phonenum
+                'Email': email,
+                'PhoneNum': phonenum
             },
             dataType: 'json',
             success: function (data) {
+                console.log(data);
                 if ("success" == data.result) {
-                     alart("注册成功");
-                }
-                else {
-                    alart("非法注册");
+                    alert("注册成功");
+                } else {
+                    alert("非法注册");
                 }
             }
 
 
         }
     );
-});
+}

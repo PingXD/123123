@@ -15,7 +15,7 @@ namespace StoreSystem.BLL
         {
             using (IDAL.IUser<Model.User> iu = new DAL.User())
             {
-                Model.User mUser= new Model.User()
+            Model.User mUser= new Model.User()
             {
                 UserName = du.UserName,
                 PassWord = du.PassWord,
